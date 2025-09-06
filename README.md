@@ -17,9 +17,15 @@ I faced challenges with CloudFront and S3 static website endpoints, but solved t
 - **Amazon S3** – stores the website file (`index.html`).  
 - **CloudFront Distribution** – delivers content globally with HTTPS.  
 - **Origin Access Control (OAC)** – restricts direct S3 access.  
-- **Cost Optimized** – no domain purchased, no SSL certificate requested, AWS Free Tier used.  
+- **Cost Optimized** – no domain purchased, no SSL certificate requested, AWS Free Tier used.
 
----
+
+
+
+<img width="1105" height="461" alt="Architecture" src="https://github.com/user-attachments/assets/8eff6898-aa9a-4520-9506-8383b4a86d23" />
+
+
+
 
 ## ⚙️ Implementation Steps
 
