@@ -31,8 +31,8 @@ I faced challenges with CloudFront and S3 static website endpoints, but solved t
 
 ### Step 1: Prepare Website Content
 Developed a single-page HTML website (`index.html`) with CSS styling and optional JavaScript.  
-![Website Content Screenshot](<img width="1270" height="815" alt="Screenshot-website-code" src="https://github.com/user-attachments/assets/44895d3a-bf99-47ed-8246-e00b27eddb2a" />
-)
+<img width="1270" height="815" alt="Screenshot-website-code" src="https://github.com/user-attachments/assets/6b39da74-5f85-4d3a-98b7-40c9ed609104" />
+
 
 ### Step 2: Create S3 Bucket
 Created an S3 bucket configured for static website hosting with `index.html` as the root object.  
