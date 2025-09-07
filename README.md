@@ -103,17 +103,6 @@ Skipped since no custom domain; CloudFront URL used for live access.
 - **No SSL certificate requested** from AWS Certificate Manager.  
 - Leveraged **AWS Free Tier** (S3 + CloudFront) for hosting.  
 
----
-
-## 📸 Screenshots
-
-All related screenshots are in the `/screenshots` folder:  
-- S3 Bucket Setup  
-- CloudFront Distribution  
-- Origin Access Control  
-- Website Working via CloudFront  
-
----
 
 ## 🔗 Demo
 
