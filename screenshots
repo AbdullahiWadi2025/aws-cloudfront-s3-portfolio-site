@@ -1,17 +1,1 @@
-Architecture → <img width="1105" height="461" alt="Architecture" src="https://github.com/user-attachments/assets/8eff6898-aa9a-4520-9506-8383b4a86d23" />
 
-Step 1 – Website Content → <img width="1270" height="815" alt="Screenshot-website-code" src="https://github.com/user-attachments/assets/6b39da74-5f85-4d3a-98b7-40c9ed609104" />
-
-Step 2 – S3 Bucket → step2-s3-bucket.png
-
-Step 3 – Upload Files → step3-upload-files.png
-
-Step 4 – S3 Static Enabled → step4-s3-static-enabled.png
-
-Step 4 – S3 Static Disabled → step4-s3-static-disabled.png
-
-Step 4 – CloudFront Distribution → step4-cloudfront.png
-
-Step 5 – Origin Access Control (OAC) → step5-oac.png
-
-Step 9 – Website Live → step9-website-live.png
