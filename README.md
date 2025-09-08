@@ -50,19 +50,20 @@ Uploaded the website file to the S3 bucket and verified proper organization.
 
 ### Step 4: CloudFront Setup & Troubleshooting
 - Initially tried **S3 static website hosting**, which caused `403 AccessDenied` errors with CloudFront.  
-- **Screenshot 1**: S3 bucket with static website enabled.
-- 
+
+**Screenshot – S3 bucket with static website enabled:** 
   <img width="798" height="684" alt="S3statichost-enable" src="https://github.com/user-attachments/assets/76a9cf69-8958-4c4f-aadb-010058e73919" />
   
 
-- **Solution:** Disabled static website hosting and used the **regular S3 bucket endpoint**, resolving the access issue.  
-- **Screenshot 2**: S3 bucket after switching to the regular endpoint.
-- 
+- **Solution:** Disabled static website hosting and used the **regular S3 bucket endpoint**, resolving the access issue.
+  
+**Screenshot – S3 bucket after switching to the regular endpoint:**  
   <img width="886" height="441" alt="S3staticwebsite-disable" src="https://github.com/user-attachments/assets/0c2a1a7c-0808-474f-bb79-6d6496d79008" />
  
 
 - Created CloudFront distribution pointing to the S3 bucket with recommended cache settings.
-- 
+  
+- **Screenshot – CloudFront distribution created:**  
   <img width="1114" height="671" alt="Created CloudFront distribution pointing to the S3 bucket" src="https://github.com/user-attachments/assets/b5792249-4bbf-4834-8d7a-b9448f48a459" />
 
 
@@ -72,20 +73,14 @@ Configured OAC so CloudFront could securely fetch files while blocking direct S3
 <img width="1097" height="696" alt="Set Up Origin Access Control (OAC)" src="https://github.com/user-attachments/assets/41473afb-c8f6-47d3-ad45-bbe693882a00" />
 
 
-### Step 6: Domain Registration (Optional)
-Skipped purchasing a domain to stay cost-efficient; used the default CloudFront URL.  
+### Step 6–9: Optional Configurations (Skipped for Cost Optimization)
+To keep the deployment cost-optimized, these configurations were skipped in this project.  
+However, they can be added later for enhanced security, scalability, and professionalism:
 
-
-### Step 7: Provision SSL Certificate (Optional)
-Did not request SSL since no custom domain was used.  
-
-
-### Step 8: Configure WAF Protection (Optional)
-Skipped AWS WAF for cost optimization.  
-
-### Step 9: Set Up DNS Records (Optional)
-Skipped since no custom domain; CloudFront URL used for live access.  
-
+- **Custom Domain Registration** – Map the CloudFront distribution to a custom domain using Route 53 or another DNS provider.  
+- **SSL Certificate (ACM)** – Request and attach an SSL certificate to enable HTTPS with a custom domain.  
+- **AWS WAF (Web Application Firewall)** – Add a WAF to protect the application from common web exploits.  
+- **DNS Records** – Configure Route 53 or another DNS provider to point the domain to the CloudFront distribution.  
 
 ---
 
@@ -101,7 +96,18 @@ Skipped since no custom domain; CloudFront URL used for live access.
 
 - **No domain purchased** – used CloudFront default URL.  
 - **No SSL certificate requested** from AWS Certificate Manager.  
-- Leveraged **AWS Free Tier** (S3 + CloudFront) for hosting.  
+- Leveraged **AWS Free Tier** (S3 + CloudFront) for hosting.
+
+---
+
+## 🚀 Future Enhancements
+
+While the current deployment is cost-optimized and functional, there are additional features that could be implemented to further improve security and scalability:
+
+- **Custom Domain Integration** – Map the CloudFront distribution to a custom domain using Route 53 or another DNS provider.  
+- **SSL Certificate** – Use AWS Certificate Manager (ACM) to enable HTTPS with a custom domain for secure communication.  
+- **AWS WAF (Web Application Firewall)** – Protect the application from common web exploits and add an extra layer of security.  
+
 
 
 ## 🔗 Demo
